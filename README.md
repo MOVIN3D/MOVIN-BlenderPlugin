@@ -1,6 +1,6 @@
 # MOVIN Blender Plugin
 
-Live Blender receiver for MOVIN motion and point cloud OSC streams.
+Blender add-on for receiving and previewing live MOVIN motion and point cloud OSC streams.
 
 This add-on lets you preview MOVIN data directly in Blender by:
 
