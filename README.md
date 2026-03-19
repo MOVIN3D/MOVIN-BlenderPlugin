@@ -15,7 +15,6 @@ It is set up for Blender 5.1 and includes sample assets for quick testing.
 - Live point cloud preview in Blender
 - Simple N-panel workflow
 - Sample `.blend` and `.fbx` files included
-- Blender 5.1-friendly point cloud visualization path
 
 ## Repository Contents
 
@@ -46,21 +45,6 @@ It is set up for Blender 5.1 and includes sample assets for quick testing.
 4. Enable `Visualize Point Cloud` if you want point cloud preview
 5. Click `Start`
 
-### Motion Streaming
-
-The add-on receives `/MOVIN/Frame` packets and applies motion to the selected armature by matching incoming bone names to Blender pose bones.
-
-### Point Cloud Streaming
-
-The add-on receives `/MOVIN/PointCloud` packets and draws them in the viewport as a live preview object.
-
-The point cloud object:
-
-- is created automatically
-- updates while streaming
-- is oriented for Blender space
-- uses a mesh-based visualization path for Blender 5.1 stability
-
 ## OSC Formats
 
 ### `/MOVIN/Frame`
@@ -87,25 +71,23 @@ Per-point payload:
 
 - Motion and point cloud streams are received on the same UDP port
 - Bone transforms are applied by name, so incoming bone names should match the target rig
-- Point cloud preview is tuned for Blender 5.1 stability rather than raw rendering complexity
-- `.blend1` backup files and Python cache files are excluded from git
 
 ## Project Structure
 
 ```text
 MOVIN_Blender/
-├─ addon/
-│  └─ movin_blender_plugin.py
-├─ samples/
-│  ├─ blend/
-│  │  ├─ MOVINMan_Sample.blend
-│  │  └─ Ch14_Sample.blend
-│  └─ fbx/
-│     ├─ MOVINManBlender.fbx
-│     └─ Ch14_nonPBR.fbx
-├─ .gitignore
-├─ LICENSE
-└─ README.md
+|- addon/
+|  `- movin_blender_plugin.py
+|- samples/
+|  |- blend/
+|  |  |- MOVINMan_Sample.blend
+|  |  `- Ch14_Sample.blend
+|  `- fbx/
+|     |- MOVINManBlender.fbx
+|     `- Ch14_nonPBR.fbx
+|- .gitignore
+|- LICENSE
+`- README.md
 ```
 
 ## Recommended Blender Version
