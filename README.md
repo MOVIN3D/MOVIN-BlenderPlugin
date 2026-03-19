@@ -19,15 +19,15 @@ It is set up for Blender 5.1 and includes sample assets for quick testing.
 
 ## Repository Contents
 
-- `movin_blender_plugin.py`  
+- `addon/movin_blender_plugin.py`  
   Blender add-on script
-- `MOVINMan_Sample.blend`  
+- `samples/blend/MOVINMan_Sample.blend`  
   Sample scene for MOVINMan
-- `Ch14_Sample.blend`  
+- `samples/blend/Ch14_Sample.blend`  
   Additional sample scene
-- `MOVINManBlender.fbx`  
+- `samples/fbx/MOVINManBlender.fbx`  
   Sample MOVINMan FBX
-- `Ch14_nonPBR.fbx`  
+- `samples/fbx/Ch14_nonPBR.fbx`  
   Sample character FBX
 
 ## Installation
@@ -35,7 +35,7 @@ It is set up for Blender 5.1 and includes sample assets for quick testing.
 1. Open Blender
 2. Go to `Edit > Preferences > Add-ons`
 3. Click `Install...`
-4. Select `movin_blender_plugin.py`
+4. Select `addon/movin_blender_plugin.py`
 5. Enable `MOVIN Live Receiver`
 
 ## Usage
@@ -89,6 +89,24 @@ Per-point payload:
 - Bone transforms are applied by name, so incoming bone names should match the target rig
 - Point cloud preview is tuned for Blender 5.1 stability rather than raw rendering complexity
 - `.blend1` backup files and Python cache files are excluded from git
+
+## Project Structure
+
+```text
+MOVIN_Blender/
+├─ addon/
+│  └─ movin_blender_plugin.py
+├─ samples/
+│  ├─ blend/
+│  │  ├─ MOVINMan_Sample.blend
+│  │  └─ Ch14_Sample.blend
+│  └─ fbx/
+│     ├─ MOVINManBlender.fbx
+│     └─ Ch14_nonPBR.fbx
+├─ .gitignore
+├─ LICENSE
+└─ README.md
+```
 
 ## Recommended Blender Version
 
