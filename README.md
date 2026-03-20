@@ -69,11 +69,6 @@ Per-point payload:
 
 `[x, y, z]`
 
-## Notes
-
-- Motion and point cloud streams are received on the same UDP port
-- Bone transforms are applied by name, so incoming bone names should match the target rig
-
 ## Project Structure
 
 ```text
