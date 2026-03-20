@@ -88,7 +88,6 @@ MOVIN_Blender/
 |     |- MOVINManBlender.fbx
 |     `- Ch14_nonPBR.fbx
 |- .gitignore
-|- LICENSE
 `- README.md
 ```
 
@@ -96,6 +95,5 @@ MOVIN_Blender/
 
 - Blender 5.1
 
-## License
-
-See [LICENSE](LICENSE).
+License
+Copyright 2025 MOVIN. All Rights Reserved.
