@@ -39,6 +39,8 @@ It is set up for Blender 5.1 and includes sample assets for quick testing.
 
 ## Usage
 
+For correct motion transfer, the same `.fbx` character model should be loaded in both MOVIN Studio and Blender.
+
 1. Open the `MOVIN Live` tab in the 3D Viewport side panel
 2. Select the target armature and click `Use Active Armature`
 3. Set the OSC port if needed
